@@ -3,3 +3,4 @@ It contains numbers like 123 and 4567.
 Some lines have multiple numbers: 42 100 2025.
 Git is fun to learn, and version 2.0 is exciting!
 End of file.
+This is the very end.
