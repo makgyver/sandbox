@@ -5,5 +5,6 @@
 
 // Functions to analyze a text file
 int count_lines(FILE *fp);
+int count_words(FILE *fp);
 
 #endif
