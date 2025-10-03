@@ -30,3 +30,20 @@ int count_lines(FILE *fp) {
     rewind(fp); // reset file pointer
     return lines;
 }
+
+/* count the numbers of words in a file */
+
+int count_words(FILE *fp){
+    int words = 0, in_word = 0;
+    char ch;
+    while ((ch = fgetc(fp)) != EOF){
+        if (ch == ' ' || ch == '\n' || ch == '\t'){
+            in_word = 0;
+        } else if (in_word == 0){
+            in_word = 1;
+            words++;
+        }
+    }
+    rewind(fp);
+    return words;
+}

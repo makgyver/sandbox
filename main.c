@@ -37,6 +37,7 @@ int main(int argc, char *argv[]) {
         printf("Usage: %s <filename> <option>\n", argv[0]);
         printf("Options:\n");
         printf("  -l    Count lines\n");
+        printf("  -w    Count words\n");
         return 1;
     }
 
@@ -48,6 +49,8 @@ int main(int argc, char *argv[]) {
 
     if (strcmp(argv[2], "-l") == 0) {
         printf("Lines: %d\n", count_lines(fp));
+    } else if(strcmp(argv[2], "-w") == 0){
+        printf("Words: %d\n", count_words(fp));
     } else {
         printf("Unknown option: %s\n", argv[2]);
     }
