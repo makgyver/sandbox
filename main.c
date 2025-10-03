@@ -54,7 +54,6 @@ int main(int argc, char *argv[]) {
     } else {
         printf("Unknown option: %s\n", argv[2]);
     }
-
     fclose(fp);
     return 0;
 }
